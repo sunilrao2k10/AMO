@@ -1,0 +1,23 @@
+
+<div class="steper">
+    <div [class]="item.active ? 'active' : null" *ngFor="let item of steper">
+        <span class="count">{{item.index}}</span>
+        <span>{{item.name}}</span>
+    </div>    
+ </div> 
+
+ <div class="accordion used-eng-temp">
+  <nz-collapse nzAccordion>
+    <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active">
+      <app-quote-request *ngIf="panel.code==='QR'"></app-quote-request>
+      <app-quote-issue *ngIf="panel.code==='QI'"></app-quote-issue>
+    </nz-collapse-panel>
+  </nz-collapse>
+ </div>
+  
+
+
+  
+
+
+

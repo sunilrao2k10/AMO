@@ -1,0 +1,120 @@
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+}
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+.spinner-border{	
+	border: 0.25em solid #3682b4;
+    border-right-color: transparent;
+}
+nz-select {
+	width: 150px;
+}
+label{
+	&.default{
+		margin-right: 10px;
+	}
+}
+.global-loader{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+.table-wrap{
+	border: 1px solid #99989a;
+	margin: 10px;
+	h4{
+		margin: 10px;
+		font-size: 14px;
+	}
+	.ant-table-thead>tr>th{
+		background: #e4e9ef;
+		color: #366ca0;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+	.ant-table tfoot>tr>td, .ant-table tfoot>tr>th, .ant-table-tbody>tr>td, .ant-table-thead>tr>th{
+		padding: 8px;
+		font-size: 12px;
+	}
+	.ant-table-tbody>tr>td {
+		border-bottom: 1px solid #c8c8c8;		
+	}
+	.btn{
+		border-radius: 0;
+		width: 100px;
+		padding: 2px;
+		color: #fff;
+		font-size: 13px;
+		&.billed{
+			background: #99989d;
+		}
+		&.pending{
+			background: #fa7c0b;
+		}
+		&.shipped{
+			background: #01ba77;
+		}
+	}
+	/* edit table*/
+	.editable-cell {
+        position: relative;
+        padding: 5px 12px;
+        cursor: pointer;
+		+ {
+			input{
+				border: 1px solid #999;
+				width: 100%;
+				border-radius: 4px;
+				padding: 3px 10px;
+			}
+		}
+      }
+
+	.editable-row:hover .editable-cell {
+		border: 1px solid #d9d9d9;
+		border-radius: 4px;
+		padding: 4px 11px;
+	}
+}
+.form-continer{
+	&.dark-bg{
+		background: #e4e8ef;
+		padding: 10px;
+		margin-top: 10px;
+		.form-control{
+			background: #fff;
+			border-radius: 0;
+			height: 35px;
+			border: 1px solid #c2c4c7;
+			font-size: 12px;
+			&:focus{
+				outline: 0 none;
+				box-shadow: none;
+			}
+		}
+		textarea{
+			&.form-control{
+				height: auto;
+			}
+		}
+		label{
+			color: #9198a0;
+			text-transform: uppercase;
+			font-size: 11px;
+		}
+	}
+}
+
+.btn.btn-primary{
+	background: #1f6da8;	
+	height: 35px;
+    line-height: 1;
+    padding: 5px 20px;
+    font-size: 14px;
+}

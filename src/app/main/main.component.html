@@ -1,0 +1,47 @@
+<div class="roles">
+    <label for="" class="default">
+        Roles:
+    </label>
+    <nz-select nzPlaceHolder="Select a Role" [(ngModel)]="selectedValue">
+        <nz-option nzLabel="Admin" nzValue="admin"></nz-option>
+        <nz-option nzLabel="Main Admin" nzValue="mainAdmin"></nz-option>
+        <nz-option nzLabel="Sub Admin" nzValue="subAdmin"></nz-option>
+    </nz-select>
+</div>
+<div class="main-tabs">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="used-engine-tab" data-toggle="tab" href="#used-engine" role="tab"
+                aria-controls="used-engine" aria-selected="true">Used Engine</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="data-management-tab" data-toggle="tab" href="#data-management" role="tab"
+                aria-controls="data-management" aria-selected="false">Data Management</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="order-tracking-tab" data-toggle="tab" href="#order-tracking" role="tab"
+                aria-controls="order-tracking" aria-selected="false">Order Tracking</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="used-engine" role="tabpanel" aria-labelledby="used-engine-tab">
+            <app-used-engine></app-used-engine>
+        </div>
+        <div class="tab-pane fade" id="data-management" role="tabpanel" aria-labelledby="data-management-tab">
+            <app-data-management></app-data-management>
+        </div>
+        <div class="tab-pane fade" id="order-tracking" role="tabpanel" aria-labelledby="order-tracking-tab">
+            <app-order-tracking></app-order-tracking>
+        </div>
+    </div>
+</div>
+<!-- <div class="main-tabs">
+        <nz-tabset nzType="card">
+            <nz-tab [nzTitle]="'Used Engine'">
+                <app-used-engine></app-used-engine>
+            </nz-tab>
+            <nz-tab [nzTitle]="'Order Tracking'">
+                <app-order-tracking></app-order-tracking>
+            </nz-tab>
+          </nz-tabset>
+    </div>     -->
